@@ -1,0 +1,236 @@
+{
+  "projectType": "saas",
+  "projectName": "Kuest Prediction Market",
+  "projectDescription": "Open-source Web3 prediction market platform for launching Polymarket-style trading on real-world events",
+  "theme": "aspen",
+  "primaryColor": "#7C3AED",
+  "lightColor": "#A78BFA",
+  "darkColor": "#5B21B6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "architecture"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/prediction-markets",
+              "concepts/blockchain-integration",
+              "concepts/order-book-mechanism",
+              "concepts/market-resolution"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Quick Deploy",
+            "pages": [
+              "deployment/vercel-quickstart",
+              "deployment/environment-variables",
+              "deployment/database-setup"
+            ]
+          },
+          {
+            "group": "Self-Hosting",
+            "pages": [
+              "deployment/docker",
+              "deployment/kubernetes",
+              "deployment/cloud-run",
+              "deployment/fly-io",
+              "deployment/digital-ocean",
+              "deployment/vps"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "deployment/storage-options",
+              "deployment/scheduler-setup",
+              "deployment/monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Platform Features",
+        "groups": [
+          {
+            "group": "Trading",
+            "pages": [
+              "features/trading-interface",
+              "features/order-types",
+              "features/wallet-integration",
+              "features/position-management"
+            ]
+          },
+          {
+            "group": "Markets",
+            "pages": [
+              "features/market-types",
+              "features/creating-markets",
+              "features/market-categories",
+              "features/recurring-markets"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "features/admin-dashboard",
+              "features/fee-configuration",
+              "features/branding-customization",
+              "features/user-management"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "features/affiliate-system",
+              "features/leaderboards",
+              "features/activity-tracking",
+              "features/internationalization"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "api/introduction",
+              "api/authentication",
+              "api/rate-limits"
+            ]
+          },
+          {
+            "group": "Market Data",
+            "pages": [
+              "api/markets/list-markets",
+              "api/markets/get-market",
+              "api/markets/market-orderbook",
+              "api/markets/market-trades",
+              "api/markets/market-candles"
+            ]
+          },
+          {
+            "group": "Trading",
+            "pages": [
+              "api/trading/place-order",
+              "api/trading/cancel-order",
+              "api/trading/get-orders",
+              "api/trading/get-positions",
+              "api/trading/trade-history"
+            ]
+          },
+          {
+            "group": "User Data",
+            "pages": [
+              "api/users/get-profile",
+              "api/users/get-portfolio",
+              "api/users/get-activity",
+              "api/users/leaderboard"
+            ]
+          },
+          {
+            "group": "Data & Analytics",
+            "pages": [
+              "api/analytics/volume-metrics",
+              "api/analytics/holder-distribution",
+              "api/analytics/builder-stats"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDKs & Bots",
+        "groups": [
+          {
+            "group": "Bot Development",
+            "pages": [
+              "bots/overview",
+              "bots/python-sdk",
+              "bots/rust-sdk",
+              "bots/trading-strategies"
+            ]
+          },
+          {
+            "group": "Integration",
+            "pages": [
+              "integration/web3-wallets",
+              "integration/safe-wallets",
+              "integration/kalshi-connector",
+              "integration/webhooks"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Smart Contracts",
+        "groups": [
+          {
+            "group": "Architecture",
+            "pages": [
+              "contracts/overview",
+              "contracts/conditional-tokens",
+              "contracts/ctf-exchange",
+              "contracts/neg-risk-exchange"
+            ]
+          },
+          {
+            "group": "Oracle System",
+            "pages": [
+              "contracts/uma-integration",
+              "contracts/market-resolution",
+              "contracts/dispute-process"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "contracts/contract-addresses",
+              "contracts/abi-reference"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Deploy your own Web3 prediction market in minutes",
+    "Polygon-native with low fees and USDC settlements",
+    "UMA-powered decentralized oracle for market resolution",
+    "On-chain affiliate attribution and fee sharing",
+    "Bot-ready APIs with Python and Rust SDKs",
+    "Full trading interface with order book and position management",
+    "Multi-deployment options: Vercel, Docker, Kubernetes, Cloud providers",
+    "Admin dashboard for branding, fees, and market management",
+    "Shared liquidity across multiple market forks",
+    "Safe-compatible proxy wallet support"
+  ],
+  "publicApiSurface": [
+    "GET /api/markets - List all markets",
+    "GET /api/markets/{id} - Get market details",
+    "GET /api/markets/{id}/orderbook - Get market order book",
+    "GET /api/events - List events",
+    "GET /api/user/positions - Get user positions",
+    "GET /api/user/orders - Get user orders",
+    "POST /api/lifi/quote - Get liquidity bridge quote",
+    "GET /api/holders - Get top holders",
+    "GET /api/event-activity - Get event activity",
+    "GET /api/users/leaderboard - Get trader leaderboard",
+    "POST /auth/login - Authenticate user",
+    "WebSocket /api/wss - Real-time market updates"
+  ]
+}
